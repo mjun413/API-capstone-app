@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  background-color: black;
+}
+#upper-section-container {
+  width: 100%;
+  height: 70vh;
+  background-image:url(https://i.ibb.co/jJyfXTz/forkandknife-1699.jpg);
+  background-repeat: no repeat;
+  background-size: cover;
+  /* background-position: center center;  */
+  margin-bottom: 20px;
+}
+.hidden {
+  display: none;
+}
+#search-container {
+  color: white;
+  margin-left: 33px;
+  padding-top: 100px;
+}
+#search-line-text {
+  font-size: 45px;
+}
+#search-elements {
+  display: flex;
+  flex-direction: row;
+}
+.search-box {
+  height: 22px;
+}
+#submit-button {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 35%;
+  margin-top:15px;
+  border-radius: 5px;
+  background-color: rgba(15, 1, 1, 0.164);
+  height: 30px;
+  width: 70px;
+}
+#results {
+  color: white;
+}
