@@ -11,7 +11,7 @@ function displayResults(myJson) {
     $('#results-list').append( 
       `<p>${myJson.restaurants[i].restaurant.location.city}</p>
        <p>${myJson.restaurants[i].restaurant.user_rating.aggregate_rating}/5</p>
-       <img src="${myJson.restaurants[i].restaurant.thumb}" alt="restaurant-thumb-img">
+       <img src="${myJson.restaurants[i].restaurant.thumb}" alt="no-restaurant-img">
        <p>Cuisine: ${myJson.restaurants[i].restaurant.cuisines}</p>
        <p>${myJson.restaurants[i].restaurant.location.address}</p>
        <p>${myJson.restaurants[i].restaurant.phone_numbers}</p>
