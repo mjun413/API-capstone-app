@@ -15,6 +15,9 @@ html, body {
   /* background-position: center center;  */
   margin-bottom: 20px;
 }
+#lower-section-container {
+  text-align: center;
+}
 .hidden {
   display: none;
 }
