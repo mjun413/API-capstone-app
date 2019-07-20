@@ -33,7 +33,7 @@ html, body {
 .search-box {
   height: 22px;
 }
-#submit-button {
+#submit-button-small {
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -42,8 +42,122 @@ html, body {
   border-radius: 5px;
   background-color: rgba(15, 1, 1, 0.164);
   height: 30px;
-  width: 70px;
+  width: 80px;
+}
+#submit-button-small:hover {
+  cursor: pointer;
 }
 #results {
   color: white;
+}
+#result-number {
+  color: white;
+}
+#result-counter-container {
+  margin-left: 95px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+#result-number {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.big-sumbit {
+  display: none;
+}
+#lower-section-container {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width : 1366px) {
+  #upper-section-container {
+    width: 70%;
+    height: 60vh;
+  }
+  #search-container {
+    margin-left: 100px;
+    padding-top: 85px;
+    position: fixed;
+  }
+  #search-line-text {
+    font-size: 70px;
+  }
+  .search-box {
+    height: 30px;
+  }
+  #submit-button {
+    margin-left: 80%;
+    margin-top: 0px;
+  }
+  .small-sumbit {
+    display: none;
+  }
+  .big-sumbit {
+    display: inline-block;
+  }
+  #submit-button-big {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-color: rgba(15, 1, 1, 0.164);
+    height: 35px;
+    width: 80px;
+  }
+  #submit-button-big:hover {
+    cursor: pointer;
+  } 
+}
+
+@media screen and (min-width: 1367px) {
+  #flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  #upper-section-container {
+    width: 70%;
+    height: 90vh;
+  }
+  #search-container {
+    margin-left: 425px;
+    margin-bottom: 5px;
+    padding-top: 85px;
+  }
+  #search-line-text {
+    font-size: 70px;
+  }
+  .search-box {
+    height: 30px;
+  }
+  .small-sumbit {
+    display: none;
+  }
+  .big-sumbit {
+    display: inline-block;
+  }
+  #submit-button-big {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-color: rgba(15, 1, 1, 0.164);
+    height: 30px;
+    width: 70px;
+  }
+  #submit-button-big:hover {
+    cursor: pointer;
+  }
+  #list-items {
+    list-style: none;
+  } 
+  #results-list {
+    margin-top: 120px;
+    margin-right: 120px;
+  }
 }
