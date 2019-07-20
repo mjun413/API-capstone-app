@@ -5,20 +5,25 @@ const searchURL = 'https://developers.zomato.com/api/v2.1';
 
 function displayResults(myJson) {
   $('#results-list').empty();
-  for (let i = 0; i < myJson.restaurants.length; i++){
+  $('#result-number').empty();
+  if (myJson.results_found === 0) {
+      $('#results-list').append(`Sorry, no result is found.`);
+    } else {
+      for (let i = 0; i < myJson.restaurants.length; i++){
     $('#results-list').append(
       `<li><h3>${myJson.restaurants[i].restaurant.name}</h3>`);
     $('#results-list').append( 
       `<p>${myJson.restaurants[i].restaurant.location.city}</p>
        <p>${myJson.restaurants[i].restaurant.user_rating.aggregate_rating}/5</p>
-       <img src="${myJson.restaurants[i].restaurant.thumb}" alt="no-restaurant-img">
+       <img src="${myJson.restaurants[i].restaurant.thumb}" alt="restaurant-thumb-img">
        <p>Cuisine: ${myJson.restaurants[i].restaurant.cuisines}</p>
        <p>${myJson.restaurants[i].restaurant.location.address}</p>
        <p>${myJson.restaurants[i].restaurant.phone_numbers}</p>
        <p>${myJson.restaurants[i].restaurant.timings}</p>
        <p><a href="${myJson.restaurants[i].restaurant.menu_url}">Menu</a></p>`);
     $('#results-list').append(`</li><hr>`);
-  }
+      }
+    }
   $('#results').removeClass('hidden');
 };
 
