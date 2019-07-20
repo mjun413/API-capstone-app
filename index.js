@@ -7,7 +7,7 @@ function displayResults(myJson) {
   $('#results-list').empty();
   $('#result-number').empty();
   if (myJson.results_found === 0) {
-      $('#results-list').append(`Sorry, no result is found. Please type in city and state name to get better search results.`);
+      $('#results-list').append(`Sorry, no result is found. Type in city and state name may get better search results.`);
     } else {
       for (let i = 0; i < myJson.restaurants.length; i++){
     $('#results-list').append(
