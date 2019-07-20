@@ -11,7 +11,7 @@ function displayResults(myJson) {
   } else {
       for (let i = 0; i < myJson.restaurants.length; i++) {
         $('#results-list').append(
-          `<li id="list-items"><h3>${myJson.restaurants[i].restaurant.name}</h3>`);
+          `<li class="list-items"><h3>${myJson.restaurants[i].restaurant.name}</h3>`);
         $('#results-list').append( 
           `<p>${myJson.restaurants[i].restaurant.location.city}</p>
            <p>${myJson.restaurants[i].restaurant.user_rating.aggregate_rating}/5</p>
